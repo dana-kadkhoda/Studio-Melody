@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Melody | استودیو ملودی</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <section class="right-section-header">
+            <p class="studio-name">Studio Melody</p>
+        </section>
+
+        <section class="left-section-header">
+    
+            <ul class="nav-container">
+                <li class="nav-list">Home</li>
+                <li class="nav-list">Tracks</li>
+                <li class="nav-list">About</li>
+                <li class="nav-list">Cantact</li>
+            </ul>
+    
+        </section>
+    </header>
+
+    <div class="first-div">
+        <i class="title-icon fa fa-music"></i> 
+        <h1 class="title">Studio Melody | استودیو ملودی</h1>
+        <p class="disc">Deep House • Progressive • Electronic</p>
+        <div class="container-btn">
+            <button class="play-last-btn"><i class="play-icon fa fa-play"></i> Play Latest Mix</button>
+            <button class="view-track-btn">View All Tracks</button>
+        </div>
+    </div>
+
+    <div class="sec-div">
+        <h2>Featured <span>Tracks</span></h2>
+        <p>Experience the latest house music productions that have been moving dance floors <br> worldwide</p>
+        <div class="container-music-veiw">
+
+            <section class="section-music">
+                <img src="./images/music-baner-1.jpg" alt="Music baner" class="baner-music">
+                <p>Midnight Frequencies</p>
+                <audio controls class="music player" >
+                    <source src="./music/music (1).mp3">
+                </audio>
+                <div>
+                    <i class="fa fa-heart-o heart"></i>
+                    <button class="full-track">Full Track</button>
+                </div>
+            </section>
+
+
+            <section class="section-music">
+                <img src="./images/music-baner-2.jpg" alt="Music baner" class="baner-music">
+                <p>Neon Dreams</p>
+                <audio controls class="music player" >
+                    <source src="./music/music (2).mp3">
+                </audio>
+                <div>
+                    <i class="fa fa-heart-o heart"></i>
+                    <button class="full-track">Full Track</button>
+                </div>
+            </section>
+
+
+            <section class="section-music">
+                <img src="./images/music-baner-3.jpg" alt="Music baner" class="baner-music">
+                <p>Electric Pulse</p>
+                <audio controls class="music player" >
+                    <source src="./music/music (3).mp3">
+                </audio>
+                <div>
+                    <i class="fa fa-heart-o heart"></i>
+                    <button class="full-track">Full Track</button>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class="last-music">
+            <audio controls class="player">
+                <source src="./music/music (3).mp3">
+            </audio>
+        </div>
+    </div>
+
+
+    <div class="about-div">
+        <section class="s-right-about">
+            <img src="./images/music-baner-1.jpg" alt="baner">
+        </section>
+        <section class="s-left-about">
+            <h2 class="title-about">About <span>Studio Melody</span> | درباره <span>استودیو ملودی</span></h2>
+            <p class="about-par">Born from the underground scene, Pulse has been crafting hypnotic house beats that transport listeners to another dimension. With a deep passion for electronic music and an ear for progressive sounds, every track tells a story of rhythm, emotion, and pure energy.
+                <br><br>
+                From intimate club sets to massive festival stages, Pulse continues to push boundaries and create unforgettable musical experiences that connect souls through the universal language of house music.</p>
+        </section>
+    </div>
+    
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script>
+
+        const players = document.querySelectorAll('.player');
+
+        players.forEach(playerElement => {
+            new Plyr(playerElement, {
+                controls: ['play', 'progress', 'current-time', 'mute', 'volume'],
+                tooltips: { controls: true, seek: true }
+            });
+        });
+    </script>
+
+</body>
+</html>
