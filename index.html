@@ -24,8 +24,10 @@
                 <li class="nav-list">About</li>
                 <li class="nav-list">Cantact</li>
             </ul>
-    
+            
         </section>
+        <p class="hid-menu"></p>
+        <div class="menu-cover"></div>
     </header>
 
     <div class="first-div">
@@ -46,9 +48,12 @@
             <section class="section-music">
                 <img src="./images/music-baner-1.jpg" alt="Music baner" class="baner-music">
                 <p>Midnight Frequencies</p>
-                <audio controls class="music player" >
-                    <source src="./music/music (1).mp3">
-                </audio>
+                <div class="con-hid-name">
+                    <p class="hid-name">Midnight Frequencies</p>
+                    <audio controls class="music player" >
+                        <source src="./music/music (1).mp3">
+                    </audio>
+                </div>
                 <div>
                     <i class="fa fa-heart-o heart"></i>
                     <button class="full-track">Full Track</button>
@@ -59,9 +64,12 @@
             <section class="section-music">
                 <img src="./images/music-baner-2.jpg" alt="Music baner" class="baner-music">
                 <p>Neon Dreams</p>
-                <audio controls class="music player" >
-                    <source src="./music/music (2).mp3">
-                </audio>
+                <div class="con-hid-name">
+                    <p class="hid-name">Neon Dreams</p>
+                    <audio controls class="music player" >
+                        <source src="./music/music (2).mp3">
+                    </audio>
+                </div>
                 <div>
                     <i class="fa fa-heart-o heart"></i>
                     <button class="full-track">Full Track</button>
@@ -72,9 +80,12 @@
             <section class="section-music">
                 <img src="./images/music-baner-3.jpg" alt="Music baner" class="baner-music">
                 <p>Electric Pulse</p>
-                <audio controls class="music player" >
-                    <source src="./music/music (3).mp3">
-                </audio>
+                <div class="con-hid-name">
+                    <p class="hid-name">Electric Pulse</p>
+                    <audio controls class="music player" >
+                        <source src="./music/music (3).mp3">
+                    </audio>
+                </div>
                 <div>
                     <i class="fa fa-heart-o heart"></i>
                     <button class="full-track">Full Track</button>
@@ -109,13 +120,25 @@
     <script>
 
         const players = document.querySelectorAll('.player');
-
-        players.forEach(playerElement => {
+        const viewportWidth = window.innerWidth;
+        let volume = "";
+        if (viewportWidth <= 460){
+            players.forEach(playerElement => {
+            new Plyr(playerElement, {
+                controls: ['play', 'progress', 'current-time', 'mute'],
+                tooltips: { controls: true, seek: true }
+                });
+            });
+        }else {
+            players.forEach(playerElement => {
             new Plyr(playerElement, {
                 controls: ['play', 'progress', 'current-time', 'mute', 'volume'],
                 tooltips: { controls: true, seek: true }
+                });
             });
-        });
+        }
+
+        
     </script>
 
 </body>

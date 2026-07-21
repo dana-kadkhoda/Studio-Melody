@@ -9,13 +9,86 @@ body {
     background-color: #4d4d4d;
 }
 
+@media (max-width: 1280px){
+    .container-music-veiw {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .section-music {
+        display: flex;
+        align-items: center;
+    }
+
+    .container-music-veiw .section-music p {
+        display: none;
+    }
+
+    .plyr__controls {
+        width: 100% !important;
+    }
+
+    .heart {
+        display: none !important;
+    }
+
+    .full-track {
+        display: none;
+    }
+
+    .hid-name {
+        display: block !important;
+        margin-bottom: 10rem;
+    }
+
+    .con-hid-name {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 890px) {
+    .section-music {
+        display: block !important;
+    }
+    
+    .baner-music {
+        width: 100% !important;
+    }
+
+    .about-div {
+        flex-direction: column;
+        height: auto !important;
+        text-align: center;
+    }
+    
+    .s-right-about, .s-left-about {
+        width: 100% !important;
+    }
+
+
+}
+
+@media (max-width: 490px) {
+    .left-section-header {
+        display: none;
+    }
+
+    .hid-menu {
+        display: block !important;
+        cursor: pointer;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     background-color: transparent;
     padding: 1.4rem;
+    z-index: 99;
 }
 
 .nav-container {
@@ -32,6 +105,32 @@ body {
 
 .nav-list:hover {
     color: #FB5700;
+}
+
+.hid-menu {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    display: none;
+}
+
+.hid-menu::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 26px;
+    display: block;
+}
+
+.menu-cover {
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    right: 22px;
+    z-index: 9999;
+    cursor: pointer;
 }
 
 .studio-name {
@@ -62,6 +161,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    margin-inline: 20px;
 }
 
 .disc {
@@ -132,7 +232,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 4rem auto 0;
-    width: 75rem;
     margin-bottom: 5rem;
 }
 
@@ -167,8 +266,8 @@ body {
 }
 
 .last-music {
-    width: 60% !important;
-    margin: 0 auto ;
+    width: 90% !important;
+    margin: 10rem auto 0;
 }
 
 :root {
@@ -233,4 +332,8 @@ body {
     color: white;
     line-height: 36px;
     margin-top: 2.5rem;
+}
+
+.hid-name {
+    display: none;
 }
