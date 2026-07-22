@@ -12,38 +12,23 @@ body {
 @media (max-width: 1280px){
     .container-music-veiw {
         flex-direction: column;
-        gap: 4rem;
+        gap: 5rem;
     }
 
     .section-music {
-        display: flex;
-        align-items: center;
+        width: 60% !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px){
+    .section-music {
+        width: 80% !important;
     }
 
-    .container-music-veiw .section-music p {
-        display: none;
-    }
-
-    .plyr__controls {
+    .first-div {
+        background-size: cover !important;
         width: 100% !important;
-    }
-
-    .heart {
-        display: none !important;
-    }
-
-    .full-track {
-        display: none;
-    }
-
-    .hid-name {
-        display: block !important;
-        margin-bottom: 10rem;
-    }
-
-    .con-hid-name {
-        display: flex;
-        flex-direction: column;
     }
 }
 
@@ -66,17 +51,36 @@ body {
         width: 100% !important;
     }
 
-
+    
 }
 
 @media (max-width: 490px) {
     .left-section-header {
         display: none;
     }
-
+    
     .hid-menu {
         display: block !important;
         cursor: pointer;
+    }
+
+    .section-music {
+        width: 90% !important;
+    }
+
+    .baner-music {
+        height: 28rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .baner-music {
+        height: 20rem !important;
     }
 }
 
@@ -144,6 +148,8 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    background-image: url(./images/image\ \(2\).jpg);
+    background-size: cover;
 }
 
 .title-icon, .disc, .title {
@@ -157,11 +163,12 @@ body {
 }
 
 .title {
-    background-image: linear-gradient(140deg,#FF8905,#C981ED);
+    background-image: linear-gradient(140deg,#ff5d05,#C981ED);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     margin-inline: 20px;
+    font-size: 3rem;
 }
 
 .disc {
@@ -223,14 +230,10 @@ body {
     color: #fd8341;
 }
 
-.sec-div p {
-    color: #7f8693;
-    text-align: center;
-}
 
 .container-music-veiw {
     display: flex;
-    justify-content: space-between;
+    gap: 3rem;
     margin: 4rem auto 0;
     margin-bottom: 5rem;
 }
@@ -239,67 +242,36 @@ body {
     border-radius: 15px;
     background-color: #1E2939;
     transition: all 0.3s;
-}
-
-.section-music:hover {
-    border: 2px solid #e67b00;
-    scale: 1.02;
-}
-
-.baner-music {
-    width: 23rem;
-    border-radius: 15px 15px 0 0;
-    height: 17rem;
-    object-fit: cover;
-}
-
-.container-music-veiw .section-music p {
-    color: white;
-    text-align: left;
-    margin: 0.3rem 0.4rem 0;
-}
-
-.music {
-    height: 2rem;
-    margin: 0 auto;
-    display: block;
-}
-
-.last-music {
-    width: 90% !important;
-    margin: 10rem auto 0;
-}
-
-:root {
-    --plyr-color-main: #FB5700; 
-}
-
-.plyr--audio {
-    margin: 1rem 0;
+    width: 100%;
+    border: 1px solid wheat;
 }
 
 .section-music div {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 0.5rem;
 }
 
-.full-track {
-    background-color: #e67b00;
-    color: white;
-    border: none;
-    padding: 0.4rem 0.6rem;
-    border-radius: 9px;
-    margin-right: 10px;
+.title-disc {
+    color: #FB5700;
+    text-align: right;
+    margin: 1rem 0.6rem;
+    font-size: 1rem;
 }
 
-.heart {
-    color: whitesmoke;
-    margin-left: 10px;
+.par-disc {
+    text-align: justify;
+    color: white;
+    font-size: 0.9rem;
+    margin: 1rem;
+    direction: rtl;
+}
+
+.baner-music {
+    width: 100%;
+    height: 35rem;
+    border-radius: 15px 15px 0 0;
 }
 
 .about-div {
-    height: 100dvh;
     background-color: black;
     display: flex;
 }
@@ -307,6 +279,7 @@ body {
 .title-about {
     color: white;
     padding-top: 5rem;
+    text-align: center;
 }
 
 .title-about span {
@@ -332,6 +305,13 @@ body {
     color: white;
     line-height: 36px;
     margin-top: 2.5rem;
+    direction: rtl;
+    text-align: justify;
+}
+
+.about-par span {
+    font-size: 1.2rem;
+    color: #ff9e6a;
 }
 
 .hid-name {
