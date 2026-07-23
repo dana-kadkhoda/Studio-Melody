@@ -6,7 +6,7 @@
 
 body {
     font-family: vazir;
-    background: url(./images/back.png);
+    background: url(./images/back-3.png);
 }
 
 @media (max-width: 1280px){
@@ -121,7 +121,7 @@ body {
     }
 
     .baner-music {
-        height: 20rem !important;
+        height: 30rem !important;
     }
 }
 
@@ -186,12 +186,13 @@ body {
 }
 
 .title {
-    background-image: linear-gradient(140deg,#ff5d05,#C981ED);
+    background-image: linear-gradient(140deg,#ffb6b6,rgb(215, 255, 142));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     margin-inline: 20px;
     font-size: 3rem;
+    animation: changeColor 1s infinite alternate;
 }
 
 .disc {
@@ -238,8 +239,8 @@ body {
 }
 
 .sec-div {
-    background-color: #101828;
     padding: 5rem;
+    margin-top: 4rem;
 }
 
 
@@ -295,18 +296,19 @@ body {
 
 .baner-music {
     width: 100%;
-    height: 35rem;
+    height: 30rem;
     border-radius: 15px 15px 0 0;
 }
 
 .about-div {
-    background-color: black;
+    background-color: rgb(108, 97, 68);
     display: flex;
+    margin: 2.5rem;
 }
 
 .title-about {
     color: white;
-    padding-top: 5rem;
+    padding-top: 3rem;
     text-align: center;
 }
 
@@ -319,14 +321,16 @@ body {
 }
 
 .s-right-about img {
-    width: 100%;
+    width: 90%;
     object-fit: cover;
-    margin-top: 5rem;
+    margin: 3rem 1rem 0.5rem;
     height: 30rem;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .s-left-about {
-    padding: 2rem
+    padding: 1.8rem 1.8rem 2rem 0.5rem;
 }
 
 .about-par {
