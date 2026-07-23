@@ -16,6 +16,14 @@ body {
         gap: 4rem;
     }
 
+    .sec-div {
+        padding: 0;
+    }
+
+    #baner-1 {
+        width: 100% !important;
+    }
+
     .section-music {
         width: 55% !important;
         margin: 0 auto;
@@ -23,6 +31,17 @@ body {
 
     .baner-music {
         height: 38rem !important;
+    }
+}
+
+@media (max-width: 900px){
+
+    .section-music {
+        width: 70% !important;
+    }
+    
+    .baner-music {
+        height: 26rem !important;
     }
 }
 
@@ -124,9 +143,13 @@ body {
     html {
         font-size: 10px;
     }
-
+    
     .baner-music {
-        height: 30rem !important;
+        height: 28rem !important;
+    }
+
+    .baner-1-img {
+        height: 22rem !important;
     }
 }
 
