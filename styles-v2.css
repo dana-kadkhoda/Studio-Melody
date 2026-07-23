@@ -125,6 +125,8 @@ body {
     }
 }
 
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -170,10 +172,17 @@ body {
     text-align: center;
 }
 
+@keyframes changeColor {
+    100% {
+        color: rgb(103, 221, 217);
+    }
+}
+
 .title-icon {
-    color: #c8ffea;
+    color: #f7c584;
     font-size: 60px !important;
     margin-bottom: 1rem;
+    animation: changeColor 1s infinite alternate;
 }
 
 .title {
@@ -244,6 +253,11 @@ body {
     color: #fd8341;
 }
 
+.under-fa {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
 
 .container-music-veiw {
     display: flex;
