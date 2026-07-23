@@ -6,7 +6,8 @@
 
 body {
     font-family: vazir;
-    background: url(./images/back-3.png);
+    background: url(./images/back.png);
+    background-size: contain;
 }
 
 @media (max-width: 1280px){
