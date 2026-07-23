@@ -13,7 +13,7 @@ body {
 @media (max-width: 1280px){
     .container-music-veiw {
         flex-direction: column;
-        gap: 5rem;
+        gap: 4rem;
     }
 
     .section-music {
@@ -91,17 +91,17 @@ body {
 
     .right-section-header {
         padding-block: 1rem;
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(9px);
         width: 100%;
         text-align: center;
     }
 
     .studio-name {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     
     .nav-container {
-        width: 20.5rem;
+        width: 26.5rem;
         margin: 0 auto;
         gap: 3rem !important;
     }
@@ -112,6 +112,10 @@ body {
 
     .baner-music {
         height: 28rem !important;
+    }
+
+    .nav-list {
+        font-size: 1.5rem;
     }
 }
 
@@ -240,8 +244,10 @@ body {
 }
 
 .sec-div {
-    padding: 5rem;
+    padding: 2rem;
     margin-top: 4rem;
+    background-color: #14230a;
+    margin: 4rem;
 }
 
 
@@ -258,7 +264,7 @@ body {
 .under-fa {
     color: white;
     text-align: center;
-    margin-top: 1rem;
+    margin: 1rem 0 4rem;
 }
 
 .container-music-veiw {
@@ -270,10 +276,8 @@ body {
 
 .section-music {
     border-radius: 15px;
-    background-color: #1E2939;
     transition: all 0.3s;
     width: 100%;
-    border: 1px solid wheat;
 }
 
 .section-music div {
@@ -302,9 +306,9 @@ body {
 }
 
 .about-div {
-    background-color: rgb(108, 97, 68);
+    background-color: #14230a;
     display: flex;
-    margin: 2.5rem;
+    margin: 4rem;
 }
 
 .title-about {
@@ -321,7 +325,13 @@ body {
     width: 50%;
 }
 
-.s-right-about img {
+.studio-map {
+    text-align: center;
+    margin-top: 3rem;
+    color: #c2d1ff;
+}
+
+.s-right-about iframe {
     width: 90%;
     object-fit: cover;
     margin: 3rem 1rem 0.5rem;
