@@ -311,7 +311,8 @@ body {
     color: #FB5700;
     text-align: right;
     margin: 1rem 0.6rem;
-    font-size: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .par-disc {
@@ -320,12 +321,42 @@ body {
     font-size: 0.9rem;
     margin: 1rem;
     direction: rtl;
+    font-size: 1rem;
+    line-height: 35px;
 }
 
 .baner-music {
     width: 100%;
     height: 30rem;
     border-radius: 15px 15px 0 0;
+}
+
+.example {
+    background-color: #14230a;
+    margin: 4rem;
+    padding: 2rem;
+}
+
+.title-example {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.container-example {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.name-music {
+    color: #ff9e6a;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.music-ex {
+    width: 100%;
 }
 
 .about-div {
