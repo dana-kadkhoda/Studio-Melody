@@ -107,15 +107,15 @@
       <div class="container-example">
         <div>
           <h4 class="name-music">نام آهنگ</h4>
-          <audio src="#" controls class="music-ex"></audio>
+          <audio src="./music/Band ali glinany and ibrahem ghadry  (1).mp3" controls controlsList="nodownload" class="music-ex"></audio>
         </div>
         <div>
           <h4 class="name-music">نام آهنگ</h4>
-          <audio src="#" controls class="music-ex"></audio>
+          <audio src="./music/Remix Hasan zirak  (1).mp3" controls controlsList="nodownload" class="music-ex"></audio>
         </div>
         <div>
           <h4 class="name-music">نام آهنگ</h4>
-          <audio src="#" controls class="music-ex"></audio>
+          <audio src="./music/REMIX RAHMAN OLAM (1).mp3" controls controlsList="nodownload" class="music-ex"></audio>
         </div>
       </div>
     </div>
@@ -139,5 +139,14 @@
         </p>
       </section>
     </div>
+
+
+    <script>
+      document.querySelectorAll(".music-ex").forEach((m) => {
+        m.addEventListener("contextmenu" , (e) => {
+          e.preventDefault()
+        })
+      })
+    </script>
   </body>
 </html>

@@ -6,7 +6,7 @@
 
 body {
     font-family: vazir;
-    background: url(./images/back-6.png);
+    background: url(./images/back-org.jpg);
     background-size: contain;
 }
 
@@ -269,8 +269,11 @@ body {
 .sec-div {
     padding: 2rem;
     margin-top: 4rem;
-    background-color: #14230a;
+    background-color: #3d1f8f67;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.77);
     margin: 4rem;
+    border-radius: 10px;
 }
 
 
@@ -332,7 +335,10 @@ body {
 }
 
 .example {
-    background-color: #14230a;
+    background-color: #3d1f8f67;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.77);
+    border-radius: 10px;
     margin: 4rem;
     padding: 2rem;
 }
@@ -360,7 +366,10 @@ body {
 }
 
 .about-div {
-    background-color: #14230a;
+    background-color: #3d1f8f67;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.77);
+    border-radius: 10px;
     display: flex;
     margin: 4rem;
 }
